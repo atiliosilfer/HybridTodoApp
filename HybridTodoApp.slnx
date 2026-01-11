@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="HybridTodoApp.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>
