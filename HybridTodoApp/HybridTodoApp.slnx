@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../HybridTodoApp.Components/HybridTodoApp.Components.csproj" Id="5f3da390-6304-4501-8c7b-86b6075f1e49" />
+  <Project Path="HybridTodoApp.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>
