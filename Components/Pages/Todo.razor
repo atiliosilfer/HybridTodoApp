@@ -1,5 +1,6 @@
 ﻿@page "/todo"
 @using HybridTodoApp.Data
+@using System.Threading.Tasks
 @inject TodoService TodoService
 @inject IConnectivity ConnectivityService
 
@@ -37,10 +38,12 @@
         todos.AddRange(items);
     }
 
-    void Upload()
+    async Task Upload()
     {
         if(ConnectivityService is null)
+        {
             return;
+        }
 
         hasInternet = ConnectivityService.NetworkAccess == NetworkAccess.Internet;
     }
