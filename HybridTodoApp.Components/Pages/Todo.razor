@@ -1,6 +1,9 @@
 ﻿@page "/todo"
+@using static Microsoft.AspNetCore.Components.Web.RenderMode
+@rendermode InteractiveServer
 @using HybridTodoApp.Data
 @using System.Threading.Tasks
+@using Microsoft.Maui.Networking
 @inject TodoService TodoService
 @inject IConnectivity ConnectivityService
 

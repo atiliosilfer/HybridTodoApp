@@ -64,6 +64,10 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\HybridTodoApp.Components\HybridTodoApp.Components.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
       <MauiXaml Update="Components\Pages\NewPage1.xaml">
         <Generator>MSBuild:Compile</Generator>
       </MauiXaml>

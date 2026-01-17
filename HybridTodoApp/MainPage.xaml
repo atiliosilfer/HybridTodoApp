@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:HybridTodoApp"
              xmlns:pages="clr-namespace:HybridTodoApp.Components.Pages"
+             xmlns:pagesShared="clr-namespace:HybridTodoApp.Components.Pages;assembly=HybridTodoApp.Components"
              xmlns:components="clr-namespace:HybridTodoApp.Components"
              x:Class="HybridTodoApp.MainPage">
 
@@ -33,7 +34,7 @@
     <ContentPage Title="Todos">
         <BlazorWebView HostPage="wwwroot/index.html">
             <BlazorWebView.RootComponents>
-                <RootComponent Selector="#app" ComponentType="{x:Type pages:Todo}" />
+                <RootComponent Selector="#app" ComponentType="{x:Type pagesShared:Todo}" />
             </BlazorWebView.RootComponents>
         </BlazorWebView>
     </ContentPage>
